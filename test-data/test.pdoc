@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<PatchelorDoc Version="7">
+  <devices />
+  <Universes />
+  <Sections>
+    <Section Name="Section#1" Comment="" SizeX="10000" SizeY="7500" BGLocked="false" Zoom="0.194872" GridX="250" GridY="250" ViewX="4187.37" ViewY="1626.71" OriginX="0" OriginY="0" OriginZ="0" RotationX="0" RotationY="0" RotationZ="0">
+      <Canvas Left="0" Top="0" Right="8000" Bottom="6000" Width="800" Height="600" />
+      <Items>
+        <Label Id="183">
+          <ItemData PosX="3000" PosY="1750" Rotation="0" Comment="" />
+          <Caption Align="near">RGB Matrix<Font Face="Arial" Height="120" Style="0" Color="0" /></Caption>
+        </Label>
+        <Item Id="1" Name="RGB" Manufacturer="Generic">
+          <ItemData PosX="1000" PosY="1000" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="1" DmxAddress="1" ScreenID="1" DisplayName="Unit" />
+        </Item>
+        <Item Id="2" Name="RGB" Manufacturer="Generic">
+          <ItemData PosX="1500" PosY="1000" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="1" DmxAddress="1" ScreenID="2" DisplayName="Unit" />
+        </Item>
+        <Item Id="3" Name="RGB" Manufacturer="Generic">
+          <ItemData PosX="750" PosY="1500" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="1" DmxAddress="7" ScreenID="3" DisplayName="Unit" />
+        </Item>
+        <Item Id="4" Name="RGB" Manufacturer="Generic">
+          <ItemData PosX="1000" PosY="1750" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="1" DmxAddress="10" ScreenID="4" DisplayName="Unit" LinkedTo="3" />
+        </Item>
+        <Item Id="5" Name="RGB" Manufacturer="Generic">
+          <ItemData PosX="1250" PosY="1750" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="1" DmxAddress="13" ScreenID="5" DisplayName="Unit" LinkedTo="4" />
+        </Item>
+        <Item Id="6" Name="RGB" Manufacturer="Generic">
+          <ItemData PosX="1500" PosY="1750" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="1" DmxAddress="16" ScreenID="6" DisplayName="Unit" LinkedTo="5" />
+        </Item>
+        <Item Id="7" Name="RGB" Manufacturer="Generic">
+          <ItemData PosX="1750" PosY="1500" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="1" DmxAddress="19" ScreenID="7" DisplayName="Unit" LinkedTo="6" />
+        </Item>
+        <Matrix Id="178" Name="RGB" Manufacturer="Generic" Rows="2" Columns="2" StartEdge="TopLeft" Direction="Vertical" SnakeMode="false">
+          <ItemData PosX="2975" PosY="1225" Rotation="0" Comment="" Width="550" Height="550" FlipH="false" FlipV="false" />
+          <MatrixElement Row="0" Column="0">
+            <Item Id="179" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2750" PosY="1000" Rotation="0" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="22" ScreenID="8" DisplayName="Unit" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="0" Column="1">
+            <Item Id="180" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="3200" PosY="1000" Rotation="0" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="28" ScreenID="9" DisplayName="Unit" LinkedTo="181" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="1" Column="0">
+            <Item Id="181" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2750" PosY="1450" Rotation="0" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="25" ScreenID="10" DisplayName="Unit" LinkedTo="179" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="1" Column="1">
+            <Item Id="182" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="3200" PosY="1450" Rotation="0" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="31" ScreenID="11" DisplayName="Unit" LinkedTo="180" />
+            </Item>
+          </MatrixElement>
+        </Matrix>
+        <Label Id="184">
+          <ItemData PosX="1250" PosY="2000" Rotation="0" Comment="" />
+          <Caption Align="near">Single RGBs<Font Face="Arial" Height="120" Style="0" Color="0" /></Caption>
+        </Label>
+        <Label Id="185">
+          <ItemData PosX="1250" PosY="750" Rotation="0" Comment="" />
+          <Caption Align="near">Duplicate address<Font Face="Arial" Height="120" Style="0" Color="0" /></Caption>
+        </Label>
+        <Item Id="186" Name="BGR Fader" Manufacturer="Generic">
+          <ItemData PosX="2250" PosY="2750" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="2" DmxAddress="34" ScreenID="12" DisplayName="Unit" />
+        </Item>
+        <Label Id="187">
+          <ItemData PosX="2250" PosY="2500" Rotation="0" Comment="" />
+          <Caption Align="near">BGR<Font Face="Arial" Height="120" Style="0" Color="0" /></Caption>
+        </Label>
+        <Item Id="188" Name="Dskch" Manufacturer="Generic">
+          <ItemData PosX="3000" PosY="2750" Rotation="0" Comment="" Width="100" Height="100" FlipH="false" FlipV="false" UniverseId="2" DmxAddress="37" ScreenID="13" DisplayName="Unit" />
+        </Item>
+        <Label Id="189">
+          <ItemData PosX="3000" PosY="2500" Rotation="0" Comment="" />
+          <Caption Align="near">Dskch<Font Face="Arial" Height="120" Style="0" Color="0" /></Caption>
+        </Label>
+      </Items>
+    </Section>
+    <Section Name="Section#2" Comment="" SizeX="10000" SizeY="7500" BGLocked="false" Zoom="0.1331" GridX="250" GridY="250" ViewX="4996.24" ViewY="3388.43" OriginX="0" OriginY="0" OriginZ="0" RotationX="0" RotationY="0" RotationZ="0">
+      <Canvas Left="0" Top="0" Right="8000" Bottom="6000" Width="800" Height="600" />
+      <Items>
+        <Matrix Id="4570" Name="RGB" Manufacturer="Generic" Rows="3" Columns="3" StartEdge="TopLeft" Direction="Vertical" SnakeMode="false">
+          <ItemData PosX="2875" PosY="1625" Rotation="22.4963" Comment="" Width="350" Height="350" FlipH="false" FlipV="false" />
+          <MatrixElement Row="0" Column="0">
+            <Item Id="4571" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2807.34" PosY="1461.68" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="38" ScreenID="14" DisplayName="Unit" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="0" Column="1">
+            <Item Id="4572" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2922.83" PosY="1509.51" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="47" ScreenID="15" DisplayName="Unit" LinkedTo="4577" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="0" Column="2">
+            <Item Id="4573" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="3038.32" PosY="1557.34" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="56" ScreenID="16" DisplayName="Unit" LinkedTo="4578" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="1" Column="0">
+            <Item Id="4574" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2759.51" PosY="1577.17" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="41" ScreenID="17" DisplayName="Unit" LinkedTo="4571" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="1" Column="1">
+            <Item Id="4575" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2875" PosY="1625" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="50" ScreenID="18" DisplayName="Unit" LinkedTo="4572" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="1" Column="2">
+            <Item Id="4576" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2990.49" PosY="1672.83" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="59" ScreenID="19" DisplayName="Unit" LinkedTo="4573" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="2" Column="0">
+            <Item Id="4577" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2711.68" PosY="1692.66" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="44" ScreenID="20" DisplayName="Unit" LinkedTo="4574" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="2" Column="1">
+            <Item Id="4578" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2827.17" PosY="1740.49" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="53" ScreenID="21" DisplayName="Unit" LinkedTo="4575" />
+            </Item>
+          </MatrixElement>
+          <MatrixElement Row="2" Column="2">
+            <Item Id="4579" Name="RGB" Manufacturer="Generic">
+              <ItemData PosX="2942.66" PosY="1788.32" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="62" ScreenID="22" DisplayName="Unit" LinkedTo="4576" />
+            </Item>
+          </MatrixElement>
+        </Matrix>
+        <Item Id="4580" Name="RGB" Manufacturer="Generic">
+          <ItemData PosX="4750" PosY="2250" Rotation="343.664" Comment="" Width="2000" Height="200" FlipH="false" FlipV="false" UniverseId="2" DmxAddress="65" ScreenID="23" DisplayName="Unit" />
+        </Item>
+      </Items>
+    </Section>
+  </Sections>
+</PatchelorDoc>
