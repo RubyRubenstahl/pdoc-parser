@@ -3,15 +3,55 @@ const { loadPdoc } = require('../src/pdoc');
 const pdoc = loadPdoc('../test-data/test.pdoc');
 
 
-test('Returns the correct total number of fixtures', () => {
-    expect(pdoc.getTotalFixtureCount()).toBe(23);
+
+test('getSections loads correct section data', () => {
+    const sections = pdoc.getSections();
+    expect(typeof sections[0]).toBe("object");
+
+    const section1 = sections[0];
+    expect(section1.name).toBe('Section#1');
+    expect(section1.comment).toBe('');
+    expect(section1.sizeX).toBe(10000);
+    expect(section1.sizeY).toBe(7500);
+    expect(section1.bGLocked).toBe(false);
+    expect(section1.zoom).toBe(0.194872);
+    expect(section1.gridX).toBe(250);
+    expect(section1.gridY).toBe(250);
+    expect(section1.viewX).toBe(4187.37);
+    expect(section1.viewY).toBe(1626.71);
+    expect(section1.originX).toBe(0);
+    expect(section1.originY).toBe(0);
+    expect(section1.originZ).toBe(0);
+    expect(section1.rotationX).toBe(0);
+    expect(section1.rotationY).toBe(0);
+    expect(section1.rotationZ).toBe(0);
+
+    const canvas = section1.canvas;
+    expect(canvas.left).toBe(0);
+    expect(canvas.top).toBe(0);
+    expect(canvas.right).toBe(8000);
+    expect(canvas.bottom).toBe(6000);
+    expect(canvas.width).toBe(800);
+    expect(canvas.height).toBe(600);
 });
 
-test('Returns the correct total number of fixtures in section', () => {
-    expect(pdoc.getSectionFixtureCount(0)).toBe(13);
-});
+test('getFixtures loads correct fixture data', () => {
+    const fixtures = pdoc.getFixtures();
+    const fixture = fixtures[0];
 
-
-test('Returns the correct total number of fixtures in section when referenced by name', () => {
-    expect(pdoc.getSectionFixtureCount("Section#2")).toBe(10);
+    expect(fixtures.length).toBe(23);
+    expect(typeof fixture.id).toBe('number');
+    expect(typeof fixture.name).toBe('string');
+    expect(typeof fixture.manufacturer).toBe('string');
+    expect(typeof fixture.posX).toBe('number')
+    expect(typeof fixture.posY).toBe('number')
+    expect(typeof fixture.rotation).toBe('number')
+    expect(typeof fixture.comment).toBe('string');
+    expect(typeof fixture.width).toBe('number')
+    expect(typeof fixture.height).toBe('number')
+    expect(typeof fixture.universeId).toBe('number')
+    expect(typeof fixture.dmxAddress).toBe('number')
+    expect(typeof fixture.screenId).toBe('number')
+    expect(typeof fixture.displayName).toBe('string');
+    expect(typeof fixture.linkedTo).toBe('number')
 });
