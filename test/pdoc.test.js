@@ -1,11 +1,12 @@
-const { loadPdoc } = require('../src/pdoc');
-
-const pdoc = loadPdoc('../test-data/test.pdoc');
+const Pdoc = require('../src/pdoc');
+const fs = require('fs');
+const pdocXml = fs.readFileSync('test-data/test.pdoc').toString();
+const pdoc = Pdoc(pdocXml);
 
 
 
 test('getSections loads correct section data', () => {
-    const sections = pdoc.getSections();
+    const sections = pdoc.sections;
     expect(typeof sections[0]).toBe("object");
 
     const section1 = sections[0];
@@ -36,7 +37,7 @@ test('getSections loads correct section data', () => {
 });
 
 test('getFixtures loads correct fixture data', () => {
-    const fixtures = pdoc.getFixtures();
+    const fixtures = pdoc.fixtures;
     const fixture = fixtures[0];
 
     expect(fixtures.length).toBe(23);
@@ -54,4 +55,26 @@ test('getFixtures loads correct fixture data', () => {
     expect(typeof fixture.screenId).toBe('number')
     expect(typeof fixture.displayName).toBe('string');
     expect(typeof fixture.linkedTo).toBe('number')
+});
+
+
+test('getLabels loads correct label data', () => {
+    const labels = pdoc.labels;
+    const label = labels[0];
+
+    expect(labels.length).toBe(5);
+    expect(label.id).toBe(183);
+    expect(label.posX).toBe(3000);
+    expect(label.posY).toBe(1750);
+    expect(label.rotation).toBe(0);
+    expect(label.comment).toBe('');
+
+    const font = label.font;
+    expect(font.align).toBe('near');
+    expect(font.face).toBe('Arial');
+    expect(font.height).toBe(120);
+    expect(font.style).toBe(0);
+    expect(font.color).toBe(0);
+
+    expect(label.text).toBe('RGB Matrix');
 });
