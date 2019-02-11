@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <PatchelorDoc Version="7">
-  <devices />
+  <devices>
+    <device name="Room 117" type="dmx_butler_xt2" id="dmx_butler_xt2@00-16-1c-f1-46-eb">
+      <function name="IP Address" type="IP Address">
+        <ipaddress address="192.168.123.1" />
+      </function>
+      <function name="MAC Address" type="MAC Address">
+        <macaddress address="00-16-1c-f1-46-eb" />
+      </function>
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="1" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="2" />
+      </function>
+    </device>
+    <device name="Butler S2 - One Gas" type="dmx_butler_s2" id="dmx_butler_s2@00-16-1c-f1-1f-6a">
+      <function name="IP Address" type="IP Address">
+        <ipaddress address="192.168.123.2" />
+      </function>
+      <function name="MAC Address" type="MAC Address">
+        <macaddress address="00-16-1c-f1-1f-6a" />
+      </function>
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="3" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="4" />
+      </function>
+    </device>
+    <device name=" LINK" type="dmx_butler" id="dmx_butler@00-16-1c-00-0c-b6">
+      <function name="IP Address" type="IP Address">
+        <ipaddress address="192.168.123.3" />
+      </function>
+      <function name="MAC Address" type="MAC Address">
+        <macaddress address="00-16-1c-00-0c-b6" />
+      </function>
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="5" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="6" />
+      </function>
+    </device>
+  </devices>
   <Universes />
   <Sections>
     <Section Name="Section#1" Comment="" SizeX="10000" SizeY="7500" BGLocked="false" Zoom="0.194872" GridX="250" GridY="250" ViewX="4187.37" ViewY="1626.71" OriginX="0" OriginY="0" OriginZ="0" RotationX="0" RotationY="0" RotationZ="0">
