@@ -108,3 +108,87 @@ test('getLabels loads correct label data', () => {
 
     expect(label.text).toBe('RGB Matrix');
 });
+
+test('Butler XT2 Parsing', () => {
+    const devices = pdoc.devices;
+    const device = devices.find(device => device.type === 'dmx_butler_xt2');
+
+    expect(device.typeDisplayName).toBe('Butler XT2');
+    expect(device.name).toBe('Butler XT2');
+    expect(device.dmxPorts.length).toBe(2);
+    expect(device.dmxPorts[0].universe).toBe(1);
+    expect(device.ipAddress).toBe('192.168.123.1');
+    expect(device.macAddress).toBe('00-16-1c-f1-46-eb');
+});
+
+test('Butler S2 Parsing', () => {
+    const devices = pdoc.devices;
+    const device = devices.find(device => device.type === 'dmx_butler_s2');
+
+    expect(device.typeDisplayName).toBe('Butler S2');
+    expect(device.name).toBe('Butler S2');
+    expect(device.dmxPorts.length).toBe(2);
+    expect(device.dmxPorts[1].universe).toBe(4);
+    expect(device.ipAddress).toBe('192.168.123.2');
+    expect(device.macAddress).toBe('00-16-1c-f1-1f-6a');
+});
+
+test('Butler PRO', () => {
+    const devices = pdoc.devices;
+    const device = devices.find(device => device.type === 'dmx_butler_pro');
+
+    expect(device.typeDisplayName).toBe('Butler PRO');
+    expect(device.name).toBe('Butler PRO #1');
+    expect(device.dmxPorts.length).toBe(16);
+    expect(device.dmxPorts[12].universe).toBe(19);
+    expect(device.ipAddress).toBe(null);
+    expect(device.macAddress).toBe(null);
+});
+
+test('Butler PRO e:pix', () => {
+    const devices = pdoc.devices;
+    const device = devices.find(device => device.type === 'dmx_butler_pro_epix');
+
+    expect(device.typeDisplayName).toBe('Butler PRO e:pix');
+    expect(device.name).toBe('Butler PRO e:pix #1');
+    expect(device.dmxPorts.length).toBe(16);
+    expect(device.dmxPorts[12].universe).toBe(35);
+    expect(device.ipAddress).toBe(null);
+    expect(device.macAddress).toBe(null);
+});
+
+test('VMC', () => {
+    const devices = pdoc.devices;
+    const device = devices.find(device => device.type === 'dmx_dvi_rocket');
+    expect(device.typeDisplayName).toBe('VMC');
+
+    expect(device.name).toBe('Video Micro Converter #1');
+    expect(device.dmxPorts.length).toBe(8);
+    expect(device.dmxPorts[2].universe).toBe(41);
+    expect(device.ipAddress).toBe(null);
+    expect(device.macAddress).toBe(null);
+});
+
+
+test('Butler Classic', () => {
+    const devices = pdoc.devices;
+    const device = devices.find(device => device.type === 'dmx_butler');
+    expect(device.typeDisplayName).toBe('Butler Classic');
+    expect(device.name).toBe('Butler #1');
+    expect(device.dmxPorts.length).toBe(2);
+    expect(device.dmxPorts[0].universe).toBe(5);
+    expect(device.ipAddress).toBe('192.168.123.3');
+    expect(device.macAddress).toBe('00-16-1c-00-0c-b6');
+});
+
+
+test('Butler Classic', () => {
+    const devices = pdoc.devices;
+    const device = devices.find(device => device.type === 'dmx_butler_xt');
+    expect(device.typeDisplayName).toBe('Butler XT');
+    expect(device.name).toBe('Butler XT #1');
+    expect(device.dmxPorts.length).toBe(2);
+    expect(device.dmxPorts[0].universe).toBe(47);
+    expect(device.ipAddress).toBe(null);
+    expect(device.macAddress).toBe(null);
+});
