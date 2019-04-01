@@ -54,7 +54,16 @@ test('getFixtures loads correct fixture data', () => {
     expect(typeof fixture.dmxAddress).toBe('number')
     expect(typeof fixture.screenId).toBe('number')
     expect(typeof fixture.displayName).toBe('string');
-    expect(typeof fixture.linkedTo).toBe('number')
+    expect(typeof fixture.linkedTo).toBe('number');
+    expect(typeof fixture.section).toBe('object');
+    expect(typeof fixture.section.name).toBe('string');
+    if (!!fixture.matrix === 'object') {
+        const item = fixture.matrix;
+        console.log(item)
+        expect(typeof item.id).toBe('number');
+        expect(typeof item.row).toBe('number');
+        expect(typeof item.column).toBe('number');
+    }
 });
 
 
