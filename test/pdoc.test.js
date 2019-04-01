@@ -1,4 +1,4 @@
-const Pdoc = require('../src/pdoc');
+const Pdoc = require('../src');
 const fs = require('fs');
 const pdocXml = fs.readFileSync('test-data/test.pdoc').toString();
 const pdoc = Pdoc(pdocXml);
