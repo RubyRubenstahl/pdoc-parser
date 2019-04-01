@@ -30,7 +30,7 @@ module.exports = function parseFixtures($) {
         }
         return data;
     });
-    return fixtureData;
+    return $(fixtureData).toArray();
 }
 
 function getMatrixData(fixtureEl) {

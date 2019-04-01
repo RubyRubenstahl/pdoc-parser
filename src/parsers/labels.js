@@ -28,5 +28,5 @@ module.exports = function parseLabels($) {
         }
 
     });
-    return labelData
+    return $(labelData).toArray();
 }

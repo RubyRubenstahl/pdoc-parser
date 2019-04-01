@@ -1,6 +1,6 @@
 module.exports = function parseSections($) {
     const sections = $('Section');
-    return sections.map((i, section) => {
+    const data = sections.map((i, section) => {
         const attribs = section.attribs;
 
         const sectionData = {
@@ -24,6 +24,7 @@ module.exports = function parseSections($) {
         }
         return sectionData;
     })
+    return $(data).toArray()
 }
 
 function getCanvas(sectionEl) {
