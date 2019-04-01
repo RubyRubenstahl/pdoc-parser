@@ -1,13 +1,13 @@
 {
-  "name": "pdoc-test",
-  "version": "1.0.0",
-  "description": "",
+  "name": "pdoc-parser",
+  "version": "0.0.1",
+  "description": "Parses e:cue patchelor pdoc formatted patch files.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ruby Rubenstahl",
+  "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "lodash": "^4.17.11"
