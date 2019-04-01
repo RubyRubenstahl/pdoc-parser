@@ -87,3 +87,24 @@ test('getLabels loads correct label data', () => {
 
     expect(label.text).toBe('RGB Matrix');
 });
+
+test('getLabels loads correct label data', () => {
+    const labels = pdoc.labels;
+    const label = labels[0];
+
+    expect(labels.length).toBe(5);
+    expect(label.id).toBe(183);
+    expect(label.posX).toBe(3000);
+    expect(label.posY).toBe(1750);
+    expect(label.rotation).toBe(0);
+    expect(label.comment).toBe('');
+
+    const font = label.font;
+    expect(font.align).toBe('near');
+    expect(font.face).toBe('Arial');
+    expect(font.height).toBe(120);
+    expect(font.style).toBe(0);
+    expect(font.color).toBe(0);
+
+    expect(label.text).toBe('RGB Matrix');
+});
