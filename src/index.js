@@ -2,6 +2,7 @@ const cheerio = require('cheerio');
 const parseFixtures = require('./parsers/fixtures');
 const parseSections = require('./parsers/sections');
 const parseLabels = require('./parsers/labels');
+const parseDevices = require('./parsers/devices');
 
 
 module.exports = function Pdoc(pdocXml) {
@@ -14,6 +15,7 @@ module.exports = function Pdoc(pdocXml) {
         sections: parseSections($),
         fixtures: parseFixtures($),
         labels: parseLabels($),
+        devices: parseDevices($)
     }
 
     return pdoc;
