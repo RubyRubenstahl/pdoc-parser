@@ -1,9 +1,186 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <PatchelorDoc Version="7">
-  <devices />
+  <devices>
+    <device name="Butler XT2" type="dmx_butler_xt2" id="dmx_butler_xt2@00-16-1c-f1-46-eb">
+      <function name="IP Address" type="IP Address">
+        <ipaddress address="192.168.123.1" />
+      </function>
+      <function name="MAC Address" type="MAC Address">
+        <macaddress address="00-16-1c-f1-46-eb" />
+      </function>
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="1" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="2" />
+      </function>
+    </device>
+    <device name="Butler S2" type="dmx_butler_s2" id="dmx_butler_s2@00-16-1c-f1-1f-6a">
+      <function name="IP Address" type="IP Address">
+        <ipaddress address="192.168.123.2" />
+      </function>
+      <function name="MAC Address" type="MAC Address">
+        <macaddress address="00-16-1c-f1-1f-6a" />
+      </function>
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="3" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="4" />
+      </function>
+    </device>
+    <device name="Butler #1" type="dmx_butler" id="dmx_butler@00-16-1c-00-0c-b6">
+      <function name="IP Address" type="IP Address">
+        <ipaddress address="192.168.123.3" />
+      </function>
+      <function name="MAC Address" type="MAC Address">
+        <macaddress address="00-16-1c-00-0c-b6" />
+      </function>
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="5" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="6" />
+      </function>
+    </device>
+    <device name="Butler PRO #1" type="dmx_butler_pro">
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="7" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="8" />
+      </function>
+      <function name="DMX Output #2" type="DMX Output">
+        <dmxmapping port="2" universe="9" />
+      </function>
+      <function name="DMX Output #3" type="DMX Output">
+        <dmxmapping port="3" universe="10" />
+      </function>
+      <function name="DMX Output #4" type="DMX Output">
+        <dmxmapping port="4" universe="11" />
+      </function>
+      <function name="DMX Output #5" type="DMX Output">
+        <dmxmapping port="5" universe="12" />
+      </function>
+      <function name="DMX Output #6" type="DMX Output">
+        <dmxmapping port="6" universe="13" />
+      </function>
+      <function name="DMX Output #7" type="DMX Output">
+        <dmxmapping port="7" universe="14" />
+      </function>
+      <function name="DMX Output #8" type="DMX Output">
+        <dmxmapping port="8" universe="15" />
+      </function>
+      <function name="DMX Output #9" type="DMX Output">
+        <dmxmapping port="9" universe="16" />
+      </function>
+      <function name="DMX Output #10" type="DMX Output">
+        <dmxmapping port="10" universe="17" />
+      </function>
+      <function name="DMX Output #11" type="DMX Output">
+        <dmxmapping port="11" universe="18" />
+      </function>
+      <function name="DMX Output #12" type="DMX Output">
+        <dmxmapping port="12" universe="19" />
+      </function>
+      <function name="DMX Output #13" type="DMX Output">
+        <dmxmapping port="13" universe="20" />
+      </function>
+      <function name="DMX Output #14" type="DMX Output">
+        <dmxmapping port="14" universe="21" />
+      </function>
+      <function name="DMX Output #15" type="DMX Output">
+        <dmxmapping port="15" universe="22" />
+      </function>
+    </device>
+    <device name="Butler PRO e:pix #1" type="dmx_butler_pro_epix">
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="23" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="24" />
+      </function>
+      <function name="DMX Output #2" type="DMX Output">
+        <dmxmapping port="2" universe="25" />
+      </function>
+      <function name="DMX Output #3" type="DMX Output">
+        <dmxmapping port="3" universe="26" />
+      </function>
+      <function name="DMX Output #4" type="DMX Output">
+        <dmxmapping port="4" universe="27" />
+      </function>
+      <function name="DMX Output #5" type="DMX Output">
+        <dmxmapping port="5" universe="28" />
+      </function>
+      <function name="DMX Output #6" type="DMX Output">
+        <dmxmapping port="6" universe="29" />
+      </function>
+      <function name="DMX Output #7" type="DMX Output">
+        <dmxmapping port="7" universe="30" />
+      </function>
+      <function name="DMX Output #8" type="DMX Output">
+        <dmxmapping port="8" universe="31" />
+      </function>
+      <function name="DMX Output #9" type="DMX Output">
+        <dmxmapping port="9" universe="32" />
+      </function>
+      <function name="DMX Output #10" type="DMX Output">
+        <dmxmapping port="10" universe="33" />
+      </function>
+      <function name="DMX Output #11" type="DMX Output">
+        <dmxmapping port="11" universe="34" />
+      </function>
+      <function name="DMX Output #12" type="DMX Output">
+        <dmxmapping port="12" universe="35" />
+      </function>
+      <function name="DMX Output #13" type="DMX Output">
+        <dmxmapping port="13" universe="36" />
+      </function>
+      <function name="DMX Output #14" type="DMX Output">
+        <dmxmapping port="14" universe="37" />
+      </function>
+      <function name="DMX Output #15" type="DMX Output">
+        <dmxmapping port="15" universe="38" />
+      </function>
+    </device>
+    <device name="Video Micro Converter #1" type="dmx_dvi_rocket">
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="39" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="40" />
+      </function>
+      <function name="DMX Output #2" type="DMX Output">
+        <dmxmapping port="2" universe="41" />
+      </function>
+      <function name="DMX Output #3" type="DMX Output">
+        <dmxmapping port="3" universe="42" />
+      </function>
+      <function name="DMX Output #4" type="DMX Output">
+        <dmxmapping port="4" universe="43" />
+      </function>
+      <function name="DMX Output #5" type="DMX Output">
+        <dmxmapping port="5" universe="44" />
+      </function>
+      <function name="DMX Output #6" type="DMX Output">
+        <dmxmapping port="6" universe="45" />
+      </function>
+      <function name="DMX Output #7" type="DMX Output">
+        <dmxmapping port="7" universe="46" />
+      </function>
+    </device>
+    <device name="Butler XT #1" type="dmx_butler_xt">
+      <function name="DMX Output #0" type="DMX Output">
+        <dmxmapping port="0" universe="47" />
+      </function>
+      <function name="DMX Output #1" type="DMX Output">
+        <dmxmapping port="1" universe="48" />
+      </function>
+    </device>
+  </devices>
   <Universes />
   <Sections>
-    <Section Name="Section#1" Comment="" SizeX="10000" SizeY="7500" BGLocked="false" Zoom="0.194872" GridX="250" GridY="250" ViewX="4187.37" ViewY="1626.71" OriginX="0" OriginY="0" OriginZ="0" RotationX="0" RotationY="0" RotationZ="0">
+    <Section Name="Section#1" Comment="" SizeX="10000" SizeY="7500" BGLocked="false" Zoom="0.194872" GridX="250" GridY="250" ViewX="1431.71" ViewY="1975.66" OriginX="0" OriginY="0" OriginZ="0" RotationX="0" RotationY="0" RotationZ="0">
       <Canvas Left="0" Top="0" Right="8000" Bottom="6000" Width="800" Height="600" />
       <Items>
         <Label Id="183">
@@ -82,7 +259,7 @@
       <Canvas Left="0" Top="0" Right="8000" Bottom="6000" Width="800" Height="600" />
       <Items>
         <Matrix Id="4570" Name="RGB" Manufacturer="Generic" Rows="3" Columns="3" StartEdge="TopLeft" Direction="Vertical" SnakeMode="false">
-          <ItemData PosX="2875" PosY="1625" Rotation="22.4963" Comment="" Width="350" Height="350" FlipH="false" FlipV="false" />
+          <ItemData PosX="2875" PosY="1625" Rotation="22.4963" Comment="" Width="350.007" Height="350.007" FlipH="false" FlipV="false" />
           <MatrixElement Row="0" Column="0">
             <Item Id="4571" Name="RGB" Manufacturer="Generic">
               <ItemData PosX="2807.34" PosY="1461.68" Rotation="22.4963" Comment="" Width="100" Height="100" UniverseId="2" DmxAddress="38" ScreenID="14" DisplayName="Unit" />
